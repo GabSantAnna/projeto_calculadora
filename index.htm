@@ -2,51 +2,35 @@
 
 <html>
     <head>
-    
+    <link rel="stylesheet" href="calcula.css">
     </head>
     <body>
-        <div id="display"> </div>
-        <button id="soma">+</button>
-        <button id="numeroUm">1</button>
-        <button id="igual">=</button>
-
-        <script>
-            //objeto calculadora
-            let calculadora = {};
-            calculadora.display = document.querySelector("#display");
-
-            let botaoUm = document.querySelector("#numeroUm");
-            let botaoSoma = document.querySelector("#soma");
-            let botaoIgual = document.querySelector("#igual");
-
-            let acumulador = "";
-            
-            botaoUm.onclick = function() {
-                calculadora.display.innerText += 1;
-            }
-
-            botaoSoma.onclick = function() {
-                acumulador += calculadora.display.innerText;
-                acumulador += " + ";
-                calculadora.display.innerText = "";
-            }
-
-            botaoIgual.onclick = function() {
-                //TODO: checar se existe conteúdo dentro do display
-
-                //colocando conteúdo do display no acumulador
-                acumulador += calculadora.display.innerText;
-                //resolvendo conta (conteúdo acumulador)
-                let resultado = eval(acumulador);
-                //colocando no display o conteúdo do acumulador
-                calculadora.display.innerText = resultado;
-                // limpando o acumulador
-                acumulador = "";
-
-            }
-
-        </script>
-
+        <div id="historico"></div> 
+        <div id="display"></div>
+        <div class="calculadora">
+            <div class="botoes">
+        <button id="clean"         class="botao-numero">C</button>
+        <button id="soma"          class="botao-numero">+</button>
+        <button id="subtraçao"     class="botao-numero">-</button>
+        <button id="numeroUm"     class="botao-numero">1</button>
+        <button id="numeroDois"   class="botao-numero">2</button>
+        <button id="numeroTres"   class="botao-numero">3</button>
+        <button id="numeroQuatro" class="botao-numero">4</button>
+        <button id="numeroCinco"  class="botao-numero">5</button>
+        <button id="numeroSeis"   class="botao-numero">6</button>
+        <button id="numeroSete"   class="botao-numero">7</button>
+        <button id="numeroOito"   class="botao-numero">8</button>
+        <button id="numeroNove"   class="botao-numero">9</button>
+        <button id="numeroZero"   class="botao-numero">0</button> 
+        <button id="virgula" class="botao-numero">.</button>  
+    </div>
+    <div class="botoes-operaçao">
+        <button id="divisao"       class="botao-operaçao">÷</button>
+        <button id="multiplicaçao" class="botao-operaçao">*</button> 
+        <button id="igual"         class="botao-operaçao">=</button>
+    </div>
+        <script src="calcula.js"></script>
+</div>   
     </body>
 
 </html>

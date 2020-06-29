@@ -1,0 +1,62 @@
+.calculadora {
+    display: flex;
+    width: 20%;
+    margin-left: 40%;
+}
+
+
+
+
+#display {
+    height: 15px;
+    padding: 0.5%;
+    text-align: right;
+    max-width: 15%;
+    margin-left: 43%;
+
+}
+
+#historico {
+    height: 15px;
+    text-align: right;
+    font-size: small;
+    max-width: 15%;
+    margin-left: 43%;
+}
+
+.botoes{
+
+    margin-left: 55px;
+}
+
+
+.botao-numero {
+    border-radius: 0px;
+    margin-bottom: 3%;
+    width: 50px;
+    height: 50px;
+}
+
+#numeroZero {
+
+    width: 104px;
+}
+
+.botoes-operaçao {
+    margin-right: 16px;
+}
+
+
+.botao-operaçao {
+    border-radius: 0px;
+    margin-bottom: 8%;
+    width: 50px;
+    height: 50px;
+
+}
+
+#igual {
+
+    height: 160px;
+
+}
